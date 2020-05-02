@@ -1,0 +1,16 @@
+Projekt 2
+
+Zbiór danych: CIFAR-10 obrazki kolorowe, 70000 próbek, 10 klas
+
+Celem projektu jest porównanie dwóch klasyfikatorów: klasyfikatora SVM użytego dla danych wygenerowanych przez prostą sieć CNN oraz klasyfikatora MLP. 
+
+Trenujemy prostą kilkuwarstwową sieć CNN dla 4 czasów trenowania: bardzo krótki, krótki, średni, pełny. Sieć taką można łatwo znaleźć. (sieć CNN składa się z części konwolucyjnej i MLP, dlatego wyniki dla klasyfikatora MLP będą takie same jak dla całej sieci CNN).
+
+Po zadanych czasach trenowania t1, t2, t3, t4, zrzucić wektory reprezentujące obrazki które wchodzą na sieć MLP. Te wektory użyć do klasyfikacji metodą SVM. 
+
+Wyniki jakości klasyfikatorów oceniać na bazie krzyżowej-walidacji, (accuracy - Loss-błąd, Krzywa ROC, Precision-Recall, (pola pod krzywymi) F1). Dokonać porównania wyników tzn: accuracy i loss dla trzech budżetów czasowych T1, T2, T3 (krótki, średni, długi). Tym sposobem porównać jakość klasyfikatorów tj. pełnej, uczonej sieci CNN w zadanych czasach oraz tej „kombinowanej” z SVM. 
+
+Należy sporządzić raport z projektu.
+
+
+W nawiasie ocena maksymalna.
